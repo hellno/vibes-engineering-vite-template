@@ -4,7 +4,7 @@
     "payload": "eyJkb21haW4iOiJ2aWJlcy1lbmdpbmVlcmluZy12aXRlLXRlbXBsYXRlLnZlcmNlbC5hcHAifQ",
     "signature": "MHg4ZWZkM2Q1NWEyYTJiOTM1MGU3MjAxM2JjNzJhNGY5YThkY2UwNWFhYThlNDc1ZmUyNWExZmM2OWM0OWVhNzk1MjJlYTI2ODc4ZmNlMjFhZTYwYjBjZmIyZWUxMWFkMWJlZDg0ZTg3NGY1Y2NjZGFkNThiMmUzNTgyNGE5YzljYTFj"
   },
-  "frame": {
+  "miniapp": {
     "version": "1",
     "name": "Vibes Vite Template",
     "iconUrl": "https://vibes-engineering-vite-template.vercel.app/logo.png",
