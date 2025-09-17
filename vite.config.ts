@@ -23,6 +23,7 @@ const htmlPlugin = () => ({
 export default defineConfig({
   plugins: [react(), htmlPlugin()],
   server: {
+    host: true,
     allowedHosts: true,
   },
 });
