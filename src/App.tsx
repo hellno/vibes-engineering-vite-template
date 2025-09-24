@@ -12,7 +12,7 @@ function App() {
 
   return (
     <main className="min-h-dvh bg-slate-50 text-slate-950 dark:bg-slate-950 dark:text-slate-100">
-      <div className="flex min-h-dvh w-full flex-col items-center justify-center gap-6 safe-px safe-py">
+      <div className="flex min-h-dvh w-full flex-col items-center justify-center gap-6 px-6 py-8 sm:px-8">
         <header className="w-full max-w-sm space-y-3 text-center">
           <h1 className="text-balance text-3xl font-semibold leading-tight xs:text-4xl">
             Vibes
