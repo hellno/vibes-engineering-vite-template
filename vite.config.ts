@@ -1,6 +1,8 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
-import { PROJECT_TITLE } from "./src/lib/constants";
+import { PROJECT_TITLE } from "./src/lib/constants.ts";
+import path from "path";
+import tailwindcss from "@tailwindcss/vite";
 
 const htmlPlugin = () => ({
   name: "html-transform",
@@ -21,9 +23,24 @@ const htmlPlugin = () => ({
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), htmlPlugin()],
+  plugins: [react(), htmlPlugin(), tailwindcss()],
   server: {
     host: true,
     allowedHosts: true,
+  },
+  build: {
+    chunkSizeWarningLimit: 800,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          wagmi: ["wagmi", "viem"],
+        },
+      },
+    },
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
 });
