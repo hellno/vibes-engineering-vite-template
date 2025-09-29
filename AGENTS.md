@@ -25,6 +25,9 @@ Guidance for LLM coding agents working in this repository.
 - Template metadata lives in `src/lib/constants.ts` and feeds the HTML replacement placeholders `{{APP_URL}}` / `{{PROJECT_TITLE}}`.
 - The production bundle currently trips Vite’s 500 kB chunk warning due to wagmi/viem; this is expected. Consider code-splitting only if size becomes a problem for your deployment target.
 
+## Available Libraries
+- **Three.js** (`three` + `@types/three`) - 3D graphics library for creating and displaying animated 3D computer graphics in web browsers
+
 ## Missing / Future
 - No automated visual regression or E2E tests are bundled; add them if your use case needs assurance beyond manual checks.
-- Additional shadcn components can be generated as needed, but follow the “no custom CSS” rule unless Tailwind utilities cannot express the requirement.
+- Additional shadcn components can be generated as needed, but follow the "no custom CSS" rule unless Tailwind utilities cannot express the requirement.
