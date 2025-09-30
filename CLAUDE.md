@@ -19,6 +19,7 @@ Guidance for LLM coding agents working in this repository.
 - `src/App.tsx` renders the single-screen mini-app layout. Keep it mobile-first, single-column
 - The Farcaster Mini App SDK **must** call `sdk.actions.ready()` on mount; never remove this effect.
 - Wallet connectivity relies on `wagmi` with the Farcaster connector configured in `src/wagmi.ts`. Any new components that need account state should consume the existing hooks.
+- For comprehensive Farcaster Mini App SDK actions, haptics, and features, see @MINIAPPS.md
 
 ## Build & Deployment Notes
 - `vite.config.ts` injects `@tailwindcss/vite`, sets up the HTML replacement plugin, and resolves the `@` alias to `./src`.
